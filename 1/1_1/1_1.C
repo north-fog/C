@@ -1,15 +1,13 @@
 #include <stdio.h>   // Библиотека ввода-вывода
 #include <locale.h>  // Библиотека кириллиц (локализации)
-#include <math.h>
+#include <math.h>    // Библиотека математики 
 int main()
 {
-	setlocale(LC_CTYPE, "Ru_RU.UTF-8"); // использование кириллиц
+	setlocale(LC_CTYPE, "Ru_RU.UTF-8"); // использование кириллицы
 
-	// Описание данных
+
 	double a, b; // Исходные данные
-	// Требуемый результат:
-	double c, d, e;
-    double g;
+	double c, d, e, g;//выходные данные
 
 	// Ввод значений исходных данных:
 	printf("Первое число = ");
@@ -23,15 +21,13 @@ int main()
     e=a*b;
     g = a / b;
 
-
-
 	// вывод результата:
 	printf("Сумма = %lf\n", c);
     printf("разность= %lf\n",d);
     printf("произведение=%lf0\n",e);
     printf("Частное=%lf\n",g);
 
-	getchar();  // Останов программы до ввода любого символа
+	getchar();  // Остановка программы до ввода любого символа
 	getchar(); 
 	return 0;
 }

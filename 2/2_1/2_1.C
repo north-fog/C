@@ -5,8 +5,8 @@ void main()
 {
  
     setlocale(LC_CTYPE, "Ru_RU.UTF-8");
-    int a,b,c;
-    int d;
+    int a,b,c;  //оценки
+    int d;      //Средний балл
 
     printf("Введите результаты экзаменов = \n");
     scanf("%d%d%d", &a,&b,&c);

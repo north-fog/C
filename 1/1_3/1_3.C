@@ -1,19 +1,27 @@
-#include <stdio.h>   
-#include <locale.h>  
-#include <math.h>
+#include <stdio.h>   // Библиотека ввода-вывода
+#include <locale.h>  // Библиотека кириллиц (локализации)
+#include <math.h>    // Библиотека математики 
 void main()
 {
-    setlocale(LC_CTYPE, "Ru_RU.UTF-8");
+    /*
+    Программа считает площадь круга через длину окружности
+    */
+    setlocale(LC_CTYPE, "Ru_RU.UTF-8");//локализация
     
-    double a,c;
-    {
-        printf("12344\t");
-    }
+    double a;   //Вводные данные
+    double c;   //Результат
+
+    //ввод данных
     printf("Введите длину окружности = ");
     scanf("%lf", &a);
-    c=(a*a)/(4*3.14);
-    printf("Площадь круга=%lf",c);
-    getchar();
-    getchar();
 
+    //рассчёт площади круга через длину окружности по формуле (l^2)/(4*pi)
+    c=(a*a)/(4*3.14);
+
+    //вывод данных
+    printf("Площадь круга=%lf",c);
+
+    //остановка программы до ввода любого символа
+    getchar();
+    getchar();
 }
