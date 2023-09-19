@@ -13,7 +13,7 @@ void main()
 
     d=(a+b+c)/3;
     if (d>4)
-        printf("Ученик отлчник ");
+        printf("Ученик отличник ");
     else if (d=4)
         printf("Ученик хорошист ");
     else if (d=3)
